@@ -73,8 +73,8 @@ Notification Traffic: tcp.port == 9999
 ⚠️ Byte counts for SMTP/IMAP are **hardcoded estimates** (1024 / 2048 bytes per operation), not measured from actual packets — useful for a rough demo, but not accurate for real analysis. If you want real packet sizes, capture with Wireshark using the filters above instead of relying on the in-app numbers.
 
 ---
-
-## 🐛 Bug Found — IMAP Port Mismatch on SSL Socket Factory
+## Known Issues
+## 🐛 Bug  — IMAP Port Mismatch on SSL Socket Factory
 
 In `EmailClient.java`, inside `receiveLatestEmail()`:
 
